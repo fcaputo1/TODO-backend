@@ -64,6 +64,7 @@ async function getTodoById(req,res) {
             })
         }
 
+        console.log("La tarea fue encontrada", todo)
         return res.status(200).send({
             ok: true,
             message: "La tarea fue encontrada", 
